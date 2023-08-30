@@ -85,7 +85,7 @@ class Gallery extends Component {
 
   render() {
     const {changeImagesItem} = this.state
-    const {imageUrl, imageAltText} = imagesList.changeImagesItem
+    const {imageUrl, imageAltText} = imagesList[changeImagesItem]
 
     return (
       <div className="bg-container">
@@ -93,7 +93,7 @@ class Gallery extends Component {
         <h1 className="heading">Nature Photography</h1>
         <p className="description">Nature Photography by Rahul</p>
         <ul className="list-container">
-          {changeImagesItem.map(eachImg => (
+          {imagesList.map(eachImg => (
             <ThumbnailItem
               key={eachImg.id}
               imgDetails={eachImg}
