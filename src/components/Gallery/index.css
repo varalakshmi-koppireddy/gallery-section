@@ -6,8 +6,8 @@
 }
 .image {
   border-radius: 10px;
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 800px;
 }
 .heading {
   font-family: 'Roboto';
@@ -21,4 +21,5 @@
 }
 .list-container {
   display: flex;
+  list-style-type: none;
 }

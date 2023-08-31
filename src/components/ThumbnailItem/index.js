@@ -2,8 +2,8 @@
 import './index.css'
 
 const ThumbnailItem = props => {
-  const {imageDetails, onChangeContent, isActive} = props
-  const {id, thumbnailUrl, thumbnailAltText} = imageDetails
+  const {imgDetails, onChangeContent, isActive} = props
+  const {id, thumbnailUrl, thumbnailAltText} = imgDetails
 
   const onClickImage = () => {
     onChangeContent(id)
